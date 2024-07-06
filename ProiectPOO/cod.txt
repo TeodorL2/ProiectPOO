@@ -1,0 +1,177 @@
+#ifndef ARMAMENT_BAZA_H
+#define ARMAMENT_BAZA_H
+#include "glont.h"
+#include "glont_rotund.h"
+#include "glont_linie.h"
+#include "glont_fusiform.h"
+#include "nava.h"
+#include <set>
+
+template <class T>
+class armament_baza
+{
+protected:
+    sf::RenderWindow* fereastra;
+    static sf::Vector2f dimensiune_virtuala_fereastra;
+    std::vector<glont*> gloante;
+    sf::Vector2f* poz;//a navei
+    const sf::Vector2f viteza_init;//a armei
+    sf::Vector2f pozitie;//a armei
+    sf::Vector2f dimens;//a navei
+    sf::Vector2f dimensiune;//a armei
+    std::vector<sf::Shape*> img_arma={};
+    int nr_gloante=0;
+    static float padding;
+    bool activ=1;
+
+    float perioada_tragare_milisec=100;
+    sf::Clock ceas;
+
+public:
+    static void set_dimensiune_virtuala_fereastra(const sf::Vector2f&);
+    void set_nr_gloante(int x);
+    int get_nr_gloante() const;
+    armament_baza(sf::RenderWindow* fereastra_=NULL,
+                  sf::Vector2f* pozitie_=sf::Vector2f(0,0),
+                  const sf::Vector2f& viteza_init_=sf::Vector2f(0,0),
+                  const sf::Vector2f& dimensiune_nava=sf::Vector2f(0,0),
+                  const int& nr_gloante_=0,
+                  const sf::Vector2f& dimens_arma=sf::Vector2f(0,0),
+                  const sf::Vector2f& poz_arma=sf::Vector2f(0,0));
+    virtual ~armament_baza();
+    virtual void generare_gloante(std::set<glont*>&);
+    void set_perioada_tragere(const float& x);
+float get_perioada_tragare()const ;
+
+void miscare(sf::Clock& cl);
+bool get_activ()const;
+
+void desenare_arma()const;
+
+};
+
+
+
+
+#include "../src/armament_baza.cpp"
+
+#endif // ARMAMENT_BAZA_H
+
+
+
+
+
+
+#ifndef ARMAMENT_BAZA_CPP
+#define ARMAMENT_BAZA_CPP
+#include <set>
+#include <iostream>
+
+#include "armament_baza.h"
+
+
+//template<class T>
+//int armament_baza<T>::nr_gloante=0;
+
+template<class T>
+sf::Vector2f armament_baza<T>::dimensiune_virtuala_fereastra=sf::Vector2f(0,0);
+
+template<class T>
+float armament_baza<T>::padding=2;
+
+template<class T>
+void armament_baza<T>::set_nr_gloante(int x){nr_gloante=x;}
+
+template<class T>
+void armament_baza<T>::set_dimensiune_virtuala_fereastra(const sf::Vector2f& d){armament_baza<T>::dimensiune_virtuala_fereastra=d;}
+
+template<class T>
+armament_baza<T>::
+    armament_baza(sf::RenderWindow* w,
+                  sf::Vector2f* pozitie_,
+                  const sf::Vector2f& viteza_init_,
+                  const sf::Vector2f& dimensiune_,
+                  const int& nr_gloante_,
+                  const sf::Vector2f&dimens_arma_,
+                  const sf::Vector2f& poz_arma_):fereastra(w),
+                                        poz(pozitie_),
+                                        viteza_init(viteza_init_),
+                                        dimens(dimensiune_),
+                                        nr_gloante(nr_gloante_),
+                                        dimensiune(dimens_arma_),
+                                        pozitie(poz_arma_){
+
+                                                    std::cout<<poz->x<<" "<<poz->y<<"\n";
+                                                    }
+
+template<class T>
+armament_baza<T>::~armament_baza(){
+for(auto i=0ull;i<img_arma.size();i++)
+    delete img_arma[i];
+img_arma.clear();
+gloante.clear();
+}
+
+
+
+template<class T>
+void armament_baza<T>::generare_gloante(std::set<glont*>& g)
+{
+    if(ceas.getElapsedTime().asMilliseconds()<perioada_tragare_milisec)return;
+    else
+        ceas.restart();
+
+    gloante.clear();
+ sf::Vector2f offset=sf::Vector2f((dimens.x-(T::get_dimensiune().x+2*armament_baza<T>::padding)*nr_gloante)/2+poz->x,poz->y-T::get_dimensiune().y);
+ glont* p=NULL;
+ for(int i=0;i<nr_gloante;i++)
+ {p = new T(fereastra,dimensiune_virtuala_fereastra,0,
+        offset+sf::Vector2f((T::get_dimensiune().x+2*armament_baza<T>::padding)*(float)i+armament_baza<T>::padding,0),
+            sf::Vector2f(0,-800),sf::Color(0,255,0));
+ gloante.push_back(p);
+ }
+
+ try{
+    for(auto i=0ull;i<gloante.size();i++)
+        g.insert(gloante[i]);
+    }
+    catch(std::runtime_error&){throw 1;}
+}
+
+template <class T>
+void armament_baza<T>::set_perioada_tragere(const float& x){perioada_tragare_milisec=x;}
+
+template <class T>
+float armament_baza<T>::get_perioada_tragare()const {return perioada_tragare_milisec;}
+
+template<class T>
+int armament_baza<T>::get_nr_gloante()const{return nr_gloante;}
+
+template<class T>
+void armament_baza<T>::miscare(sf::Clock& cl)
+{
+    sf::Time timp=cl.getElapsedTime();
+    pozitie+=viteza_init* timp.asSeconds();
+
+    if(pozitie.x<0)
+        activ=false;
+    if(pozitie.y<0)
+        activ=false;
+    sf::Vector2f d_fereastra=dimensiune_virtuala_fereastra;
+
+    if(pozitie.x+dimensiune.x>d_fereastra.x)
+        activ=false;
+    if(pozitie.y+dimensiune.y>d_fereastra.y)
+        activ=false;
+}
+
+template<class T>
+bool armament_baza<T>::get_activ()const{return activ;}
+
+template<class T>
+void armament_baza<T>::desenare_arma()const{
+for(auto i:img_arma)
+    fereastra->draw(*i);
+}
+
+#endif // ARMAMENT_BAZA_H

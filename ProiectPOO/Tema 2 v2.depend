@@ -1,0 +1,290 @@
+# depslib dependency file v1.0
+1685385125 source:c:\users\opportunity\desktop\teodor - anul i\semestrul ii\poo\laborator\teme\tema 2 v2\main.cpp
+	<iostream>
+	<SFML/Graphics.hpp>
+	"gameplay.h"
+
+1685382115 c:\users\opportunity\desktop\teodor - anul i\semestrul ii\poo\laborator\teme\tema 2 v2\include\fundal.h
+	<SFML/Graphics.hpp>
+
+1685382115 source:c:\users\opportunity\desktop\teodor - anul i\semestrul ii\poo\laborator\teme\tema 2 v2\src\fundal.cpp
+	"fundal.h"
+	"exceptii.h"
+
+1685382905 c:\users\opportunity\desktop\teodor - anul i\semestrul ii\poo\laborator\teme\tema 2 v2\include\nava.h
+	<SFML/Graphics.hpp>
+	<iostream>
+
+1685382905 source:c:\users\opportunity\desktop\teodor - anul i\semestrul ii\poo\laborator\teme\tema 2 v2\src\nava.cpp
+	"nava.h"
+	"exceptii.h"
+
+1685207515 source:c:\users\opportunity\desktop\teodor - anul i\semestrul ii\poo\laborator\teme\tema 2 v2\src\glont_rotund.cpp
+	"glont_rotund.h"
+	"exceptii.h"
+
+1685380872 c:\users\opportunity\desktop\teodor - anul i\semestrul ii\poo\laborator\teme\tema 2 v2\include\glont_rotund.h
+	"glont.h"
+
+1685382293 source:c:\users\opportunity\desktop\teodor - anul i\semestrul ii\poo\laborator\teme\tema 2 v2\src\glont.cpp
+	"glont.h"
+	"exceptii.h"
+
+1685382293 c:\users\opportunity\desktop\teodor - anul i\semestrul ii\poo\laborator\teme\tema 2 v2\include\glont.h
+	<SFML/Graphics.hpp>
+	<iostream>
+
+1685387614 source:c:\users\opportunity\desktop\teodor - anul i\semestrul ii\poo\laborator\teme\tema 2 v2\src\gameplay.cpp
+	"gameplay.h"
+
+1685380749 c:\users\opportunity\desktop\teodor - anul i\semestrul ii\poo\laborator\teme\tema 2 v2\include\gameplay.h
+	"nava.h"
+	"fundal.h"
+	<iostream>
+	<set>
+	<cstdlib>
+	<ctime>
+	"glont_rotund.h"
+	"glont_linie.h"
+	"glont_fusiform.h"
+	"armament_baza.h"
+	"arma_plus_un_glont.h"
+	"arma_minus_un_glont.h"
+	"generator_adversari.h"
+
+1685380872 c:\users\opportunity\desktop\teodor - anul i\semestrul ii\poo\laborator\teme\tema 2 v2\include\glont_linie.h
+	"glont.h"
+
+1685207515 source:c:\users\opportunity\desktop\teodor - anul i\semestrul ii\poo\laborator\teme\tema 2 v2\src\glont_linie.cpp
+	"glont_linie.h"
+	"exceptii.h"
+
+1685380872 c:\users\opportunity\desktop\teodor - anul i\semestrul ii\poo\laborator\teme\tema 2 v2\include\glont_fusiform.h
+	"glont.h"
+
+1685207515 source:c:\users\opportunity\desktop\teodor - anul i\semestrul ii\poo\laborator\teme\tema 2 v2\src\glont_fusiform.cpp
+	"glont_fusiform.h"
+	"exceptii.h"
+
+1685383659 source:c:\users\opportunity\desktop\teodor - anul i\semestrul ii\poo\laborator\teme\tema 2 v2\src\armament_baza.cpp
+	<set>
+	<iostream>
+	"exceptii.h"
+	"armament_baza.h"
+
+1685383446 c:\users\opportunity\desktop\teodor - anul i\semestrul ii\poo\laborator\teme\tema 2 v2\include\armament_baza.h
+	"glont.h"
+	"glont_rotund.h"
+	"glont_linie.h"
+	"glont_fusiform.h"
+	"nava.h"
+	"armament_baza_netemplate.h"
+	<set>
+	<typeinfo>
+	"../src/armament_baza.cpp"
+
+1685383659 c:\users\opportunity\desktop\teodor - anul i\semestrul ii\poo\laborator\teme\tema 2 v2\src\armament_baza.cpp
+	<set>
+	<iostream>
+	"exceptii.h"
+	"armament_baza.h"
+
+1685104488 source:c:\users\opportunity\desktop\teodor - anul i\semestrul ii\poo\laborator\teme\tema 2 v2\src\arma_plus_un_glont.cpp
+	"arma_plus_un_glont.h"
+
+1685351164 c:\users\opportunity\desktop\teodor - anul i\semestrul ii\poo\laborator\teme\tema 2 v2\include\arma_plus_un_glont.h
+	"armament_baza.h"
+	"../src/arma_plus_un_glont.cpp"
+
+1685104488 c:\users\opportunity\desktop\teodor - anul i\semestrul ii\poo\laborator\teme\tema 2 v2\src\arma_plus_un_glont.cpp
+	"arma_plus_un_glont.h"
+
+1684678051 c:\users\opportunity\desktop\teodor - anul i\semestrul ii\poo\laborator\teme\tema 2 v2\src\gameplay.cpp
+	"gameplay.h"
+
+1685104488 source:c:\users\opportunity\desktop\teodor - anul i\semestrul ii\poo\laborator\teme\tema 2 v2\src\arma_minus_un_glont.cpp
+	"arma_minus_un_glont.h"
+
+1685351164 c:\users\opportunity\desktop\teodor - anul i\semestrul ii\poo\laborator\teme\tema 2 v2\include\arma_minus_un_glont.h
+	"armament_baza.h"
+	"../src/arma_minus_un_glont.cpp"
+
+1685104488 c:\users\opportunity\desktop\teodor - anul i\semestrul ii\poo\laborator\teme\tema 2 v2\src\arma_minus_un_glont.cpp
+	"arma_minus_un_glont.h"
+
+1684740073 source:c:\users\opportunity\desktop\teodor - anul i\semestrul ii\poo\laborator\teme\tema 2 v2\src\adversar.cpp
+	"adversar.h"
+	"exceptii.h"
+
+1685202856 c:\users\opportunity\desktop\teodor - anul i\semestrul ii\poo\laborator\teme\tema 2 v2\include\adversar.h
+	<SFML/Graphics.hpp>
+	<iostream>
+	<set>
+	"glont.h"
+
+1685109300 source:c:\users\opportunity\desktop\teodor - anul i\semestrul ii\poo\laborator\teme\tema 2 v2\src\generator_adversari.cpp
+	"generator_adversari.h"
+	"exceptii.h"
+
+1685203287 c:\users\opportunity\desktop\teodor - anul i\semestrul ii\poo\laborator\teme\tema 2 v2\include\generator_adversari.h
+	"adversar.h"
+	"nava.h"
+	<stdlib.h>
+
+1685206858 source:c:\users\opportunity\desktop\teodor - anul i\semestrul ii\poo\laborator\teme\tema 2 v2\src\exceptii.cpp
+	"exceptii.h"
+
+1685206858 c:\users\opportunity\desktop\teodor - anul i\semestrul ii\poo\laborator\teme\tema 2 v2\include\exceptii.h
+	<iostream>
+	<exception>
+
+1685382450 c:\users\opportunity\desktop\teodor - anul i\semestrul ii\poo\laborator\teme\tema 2 v2\include\armament_baza_netemplate.h
+	<set>
+	"glont.h"
+
+1685382395 source:c:\users\opportunity\desktop\teodor - anul i\semestrul ii\poo\laborator\teme\tema 2 v2\src\armament_baza_netemplate.cpp
+	"armament_baza_netemplate.h"
+
+1685385125 source:c:\users\opportunity\desktop\teodor - anul i\semestrul ii\poo\proiectpoo\proiectpoo\main.cpp
+	<iostream>
+	<SFML/Graphics.hpp>
+	"gameplay.h"
+
+1685380749 c:\users\opportunity\desktop\teodor - anul i\semestrul ii\poo\proiectpoo\proiectpoo\include\gameplay.h
+	"nava.h"
+	"fundal.h"
+	<iostream>
+	<set>
+	<cstdlib>
+	<ctime>
+	"glont_rotund.h"
+	"glont_linie.h"
+	"glont_fusiform.h"
+	"armament_baza.h"
+	"arma_plus_un_glont.h"
+	"arma_minus_un_glont.h"
+	"generator_adversari.h"
+
+1685382905 c:\users\opportunity\desktop\teodor - anul i\semestrul ii\poo\proiectpoo\proiectpoo\include\nava.h
+	<SFML/Graphics.hpp>
+	<iostream>
+
+1685382115 c:\users\opportunity\desktop\teodor - anul i\semestrul ii\poo\proiectpoo\proiectpoo\include\fundal.h
+	<SFML/Graphics.hpp>
+
+1685380872 c:\users\opportunity\desktop\teodor - anul i\semestrul ii\poo\proiectpoo\proiectpoo\include\glont_rotund.h
+	"glont.h"
+
+1685382293 c:\users\opportunity\desktop\teodor - anul i\semestrul ii\poo\proiectpoo\proiectpoo\include\glont.h
+	<SFML/Graphics.hpp>
+	<iostream>
+
+1685380872 c:\users\opportunity\desktop\teodor - anul i\semestrul ii\poo\proiectpoo\proiectpoo\include\glont_linie.h
+	"glont.h"
+
+1685380872 c:\users\opportunity\desktop\teodor - anul i\semestrul ii\poo\proiectpoo\proiectpoo\include\glont_fusiform.h
+	"glont.h"
+
+1685383446 c:\users\opportunity\desktop\teodor - anul i\semestrul ii\poo\proiectpoo\proiectpoo\include\armament_baza.h
+	"glont.h"
+	"glont_rotund.h"
+	"glont_linie.h"
+	"glont_fusiform.h"
+	"nava.h"
+	"armament_baza_netemplate.h"
+	<set>
+	<typeinfo>
+	"../src/armament_baza.cpp"
+
+1685382450 c:\users\opportunity\desktop\teodor - anul i\semestrul ii\poo\proiectpoo\proiectpoo\include\armament_baza_netemplate.h
+	<set>
+	"glont.h"
+
+1685383659 c:\users\opportunity\desktop\teodor - anul i\semestrul ii\poo\proiectpoo\proiectpoo\src\armament_baza.cpp
+	<set>
+	<iostream>
+	"exceptii.h"
+	"armament_baza.h"
+
+1685206858 c:\users\opportunity\desktop\teodor - anul i\semestrul ii\poo\proiectpoo\proiectpoo\include\exceptii.h
+	<iostream>
+	<exception>
+
+1685351164 c:\users\opportunity\desktop\teodor - anul i\semestrul ii\poo\proiectpoo\proiectpoo\include\arma_plus_un_glont.h
+	"armament_baza.h"
+	"../src/arma_plus_un_glont.cpp"
+
+1685104488 c:\users\opportunity\desktop\teodor - anul i\semestrul ii\poo\proiectpoo\proiectpoo\src\arma_plus_un_glont.cpp
+	"arma_plus_un_glont.h"
+
+1685351164 c:\users\opportunity\desktop\teodor - anul i\semestrul ii\poo\proiectpoo\proiectpoo\include\arma_minus_un_glont.h
+	"armament_baza.h"
+	"../src/arma_minus_un_glont.cpp"
+
+1685104488 c:\users\opportunity\desktop\teodor - anul i\semestrul ii\poo\proiectpoo\proiectpoo\src\arma_minus_un_glont.cpp
+	"arma_minus_un_glont.h"
+
+1685203287 c:\users\opportunity\desktop\teodor - anul i\semestrul ii\poo\proiectpoo\proiectpoo\include\generator_adversari.h
+	"adversar.h"
+	"nava.h"
+	<stdlib.h>
+
+1685202856 c:\users\opportunity\desktop\teodor - anul i\semestrul ii\poo\proiectpoo\proiectpoo\include\adversar.h
+	<SFML/Graphics.hpp>
+	<iostream>
+	<set>
+	"glont.h"
+
+1684740073 source:c:\users\opportunity\desktop\teodor - anul i\semestrul ii\poo\proiectpoo\proiectpoo\src\adversar.cpp
+	"adversar.h"
+	"exceptii.h"
+
+1685104488 source:c:\users\opportunity\desktop\teodor - anul i\semestrul ii\poo\proiectpoo\proiectpoo\src\arma_minus_un_glont.cpp
+	"arma_minus_un_glont.h"
+
+1685104488 source:c:\users\opportunity\desktop\teodor - anul i\semestrul ii\poo\proiectpoo\proiectpoo\src\arma_plus_un_glont.cpp
+	"arma_plus_un_glont.h"
+
+1685383659 source:c:\users\opportunity\desktop\teodor - anul i\semestrul ii\poo\proiectpoo\proiectpoo\src\armament_baza.cpp
+	<set>
+	<iostream>
+	"exceptii.h"
+	"armament_baza.h"
+
+1685382395 source:c:\users\opportunity\desktop\teodor - anul i\semestrul ii\poo\proiectpoo\proiectpoo\src\armament_baza_netemplate.cpp
+	"armament_baza_netemplate.h"
+
+1685206858 source:c:\users\opportunity\desktop\teodor - anul i\semestrul ii\poo\proiectpoo\proiectpoo\src\exceptii.cpp
+	"exceptii.h"
+
+1685382115 source:c:\users\opportunity\desktop\teodor - anul i\semestrul ii\poo\proiectpoo\proiectpoo\src\fundal.cpp
+	"fundal.h"
+	"exceptii.h"
+
+1685387614 source:c:\users\opportunity\desktop\teodor - anul i\semestrul ii\poo\proiectpoo\proiectpoo\src\gameplay.cpp
+	"gameplay.h"
+
+1685109300 source:c:\users\opportunity\desktop\teodor - anul i\semestrul ii\poo\proiectpoo\proiectpoo\src\generator_adversari.cpp
+	"generator_adversari.h"
+	"exceptii.h"
+
+1685382293 source:c:\users\opportunity\desktop\teodor - anul i\semestrul ii\poo\proiectpoo\proiectpoo\src\glont.cpp
+	"glont.h"
+	"exceptii.h"
+
+1685207515 source:c:\users\opportunity\desktop\teodor - anul i\semestrul ii\poo\proiectpoo\proiectpoo\src\glont_fusiform.cpp
+	"glont_fusiform.h"
+	"exceptii.h"
+
+1685207515 source:c:\users\opportunity\desktop\teodor - anul i\semestrul ii\poo\proiectpoo\proiectpoo\src\glont_linie.cpp
+	"glont_linie.h"
+	"exceptii.h"
+
+1685207515 source:c:\users\opportunity\desktop\teodor - anul i\semestrul ii\poo\proiectpoo\proiectpoo\src\glont_rotund.cpp
+	"glont_rotund.h"
+	"exceptii.h"
+
+1685382905 source:c:\users\opportunity\desktop\teodor - anul i\semestrul ii\poo\proiectpoo\proiectpoo\src\nava.cpp
+	"nava.h"
+	"exceptii.h"
+

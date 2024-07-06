@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Tema 2 v2" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/Tema 2 v2" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="include" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/Tema 2 v2" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-mwindows" />
+					<Add directory="include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add option="-mwindows" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="include/adversar.h" />
+		<Unit filename="include/arma_minus_un_glont.h" />
+		<Unit filename="include/arma_plus_un_glont.h" />
+		<Unit filename="include/armament_baza.h" />
+		<Unit filename="include/armament_baza_netemplate.h" />
+		<Unit filename="include/exceptii.h" />
+		<Unit filename="include/fundal.h" />
+		<Unit filename="include/gameplay.h" />
+		<Unit filename="include/generator_adversari.h" />
+		<Unit filename="include/glont.h" />
+		<Unit filename="include/glont_fusiform.h" />
+		<Unit filename="include/glont_linie.h" />
+		<Unit filename="include/glont_rotund.h" />
+		<Unit filename="include/nava.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="src/adversar.cpp" />
+		<Unit filename="src/arma_minus_un_glont.cpp" />
+		<Unit filename="src/arma_plus_un_glont.cpp" />
+		<Unit filename="src/armament_baza.cpp" />
+		<Unit filename="src/armament_baza_netemplate.cpp" />
+		<Unit filename="src/exceptii.cpp" />
+		<Unit filename="src/fundal.cpp" />
+		<Unit filename="src/gameplay.cpp" />
+		<Unit filename="src/generator_adversari.cpp" />
+		<Unit filename="src/glont.cpp" />
+		<Unit filename="src/glont_fusiform.cpp" />
+		<Unit filename="src/glont_linie.cpp" />
+		<Unit filename="src/glont_rotund.cpp" />
+		<Unit filename="src/nava.cpp" />
+		<Extensions>
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
